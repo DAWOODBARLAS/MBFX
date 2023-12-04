@@ -1,0 +1,213 @@
+@import 'core.css';
+body {
+  background-color: #fff;
+}
+.banner {
+  background-image: url("../assets/platform-info/banner-img.jpg");
+}
+.metaTrade .left-section img {
+  width: 100%;
+}
+.metaTrade .left-section .left-sub-section p {
+  width: 65%;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.metaTrade .left-section .left-sub-section button {
+  font-size: 14px;
+  background-color: var(--brandColor1);
+  color: black;
+  font-weight: bold;
+  border: 0;
+}
+.metaTrade .right-section h3 {
+  font-weight: bold;
+  font-size: 33px;
+}
+.metaTrade .right-section p {
+  font-weight: bold;
+  line-height: 19px;
+}
+.metaTrade .right-section .item {
+  padding-bottom: 22px;
+}
+.metaTrade .right-section .item img{
+    width:20px;
+}
+.metaTrade .right-section .item span {
+  font-size: 14px;
+}
+.metaTrade .right-section .item .first {
+  font-weight: bold;
+  color: black;
+}
+
+.market .section-header h2 {
+  font-size: 38px;
+}
+.market .section-header p {
+  color: black;
+}
+.market img {
+  width: 100%;
+}
+
+.tradingSkill {
+  background-image: linear-gradient(to bottom, transparent 80%, #fff 20%), url("../assets/trading/demo-account-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.tradingSkill .sub-section {
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+.tradingSkill .sub-section h2 {
+  font-size: 36px;
+  color: var(--brandColor1-light);
+}
+.tradingSkill .sub-section p {
+  color: white;
+}
+.tradingSkill .img-wrapper {
+  height: 75px;
+  width: 80px;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.1);
+  transition: all 300ms ease-in-out;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.tradingSkill .img-wrapper img {
+  filter: invert(1) grayscale(100%);
+  padding: 10px 10px 5px 10px;
+}
+.tradingSkill .img-wrapper p {
+  font-size: 14px;
+}
+.tradingSkill .img-wrapper a {
+  text-decoration: none;
+}
+.tradingSkill .img-wrapper:hover {
+  background-color: #fff;
+}
+.tradingSkill .img-wrapper:hover img {
+  filter: inherit;
+}
+.tradingSkill .img-wrapper:hover p {
+  color: black;
+}
+.tradingSkill .help-inner {
+  background-image: url("../assets/yellow-img.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 70px;
+  align-items: center;
+}
+.tradingSkill .help-inner h2 {
+  text-transform: capitalize;
+  font-size: 37px;
+}
+.tradingSkill .help-inner h2 span {
+  font-size: 15px;
+}
+.tradingSkill .help-inner .btn {
+border:0px;
+  border-radius: 0;
+}
+
+.tradingHours h2 {
+  font-size: 37px;
+  font-weight: bold;
+}
+.tradingHours p {
+  color: black;
+  font-size: 15px;
+}
+.tradingHours table {
+  box-shadow: 3px 3px 15px #dfdcdc;
+}
+.tradingHours table thead tr {
+  background-color: var(--brandColor1);
+}
+.tradingHours table thead tr th {
+  border: 0;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0px;
+}
+.tradingHours table tbody tr th {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px 0px;
+  color: black;
+  text-transform: uppercase;
+}
+.tradingHours table tbody tr td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 0px;
+  color: black;
+  border: 0;
+}
+
+.tradingHoliday {
+  padding-top: 0;
+}
+.tradingHoliday h2 {
+  font-size: 37px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.tradingHoliday table {
+  box-shadow: 3px 3px 15px #dfdcdc;
+}
+.tradingHoliday table thead tr {
+  background-color: var(--brandColor1);
+}
+.tradingHoliday table thead tr th {
+  border: 0;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0px;
+  font-weight: bold;
+}
+.tradingHoliday table tbody tr td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 0px;
+  color: black;
+  font-size: 14px;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .metaTrade .left-section {
+    text-align: center;
+  }
+  .metaTrade .left-section .left-sub-section p {
+    width: 100%;
+  }
+  .metaTrade .right-section h3 {
+    margin-top: 20px;
+  }
+  .metaTrade .right-section .item {
+    padding-bottom: 10px;
+  }
+  .tradingSkill {
+    padding-top: 50px;
+  }
+  .tradingSkill .help-inner {
+    margin-top: 0px !important;
+    padding: 20px !important;
+    display: block;
+  }
+}

@@ -1,0 +1,561 @@
+@import 'core.css';
+@import 'footer.css';
+@import'index.css';
+@import 'partner.css';
+@import'trading.css';
+
+
+body {
+    background-color: #fff;
+}
+
+.mobileApp {
+    display: none;
+}
+
+.navbar-nav {
+    display: none !important;
+}
+
+/* Second Banner */
+.banner h1 {
+    /* font-size: 40px; */
+    font-size: rfs-fluid-value(40px);
+    color: white;
+    line-height: 1.2;
+    word-spacing: 0;
+    margin-bottom: 20px;
+    font-family: 'Catamaran', sans-serif;
+    padding-top: 50px;
+    margin-top: 60px;
+
+}
+
+.banner p {
+    margin: 0px 0 15px 0;
+    color: white;
+    font-size: 20px;
+    font-family: 'Catamaran', sans-serif;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.banner {
+    background-image: url("../assets/funding/web-cover1.png");
+}
+
+.services {
+    background-image: url("../assets/funding/web-cover2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: inherit;
+    background-color: black;
+}
+
+
+
+.service-heading {
+    color: white;
+}
+
+.services .cards p {
+    margin: 0;
+    color: black;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.services .cards h4 {
+    font-weight: bold;
+}
+
+.reward-img {
+    max-width: 55%;
+}
+
+.reward-content h3 {
+    font-weight: bold;
+}
+
+.reward-end-content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reward-content p {
+    margin-bottom: 50px;
+}
+
+.banner-btn {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-transform: capitalize;
+    letter-spacing: 0.5;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    border-radius: 30px;
+    font-family: 'Catamaran', sans-serif;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.bg-color-a {
+    background-color: #03bb78;
+}
+
+.bg-color-b {
+    background-color: #e3373f;
+}
+
+.banner .challenge {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 30px;
+    letter-spacing: -1px;
+
+}
+
+.challenge a {
+    font-size: 16px;
+    margin-top: 6px;
+    color: #03bb78 !important;
+    display: block;
+}
+
+/* banner */
+
+/* .banner h2 {
+    margin: 190px 0 50px 0;
+}
+
+.ban-p {
+    margin-bottom: 30px;
+}
+
+.banner {
+    background-image: url("../assets/funding/web-cover1.png");
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.banner h4,
+h2,
+p {
+    z-index: 1;
+    color: white;
+} */
+/* /Banner */
+
+.nav-card {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #262A2A 43%, #33424A 81%);
+
+}
+
+.nav-card a {
+    font-size: 13px;
+    font-weight: bold;
+    color: #03bb78;
+}
+
+section .section-header h2 {
+    text-transform: initial;
+}
+
+section .btn {
+    font-size: 14px;
+}
+
+ol li {
+    list-style-type: circle;
+}
+
+.coin-img {
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, -275, 70);
+}
+
+ul li {
+    padding-bottom: 8px;
+    display: flex;
+}
+
+ul li span {
+    padding-right: 3px;
+}
+
+
+
+.section-header h6 {
+    font-size: 80px;
+    color: #e3373f;
+    font-weight: bold;
+}
+
+.form {
+    background: rgba(212, 212, 212, 0.9019607843);
+    border-radius: 5px;
+    box-shadow: 6px 6px 7px #262626;
+}
+
+
+
+
+.form h3 {
+    padding: 20px 0px;
+    font-size: 17px;
+}
+
+
+.form textarea {
+    height: 50px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.coustom-height {
+    height: 23rem;
+    margin-top: 45px;
+}
+
+.coustom-card-height {
+    height: 35rem;
+}
+
+.bg-color {
+    background-color: #171717 !important;
+}
+
+.offer h2 {
+    color: white;
+}
+
+/* .bg-color .card {
+    background-color: #f0f0f03b !important;
+} */
+
+.offer li {
+    color: black;
+}
+
+.coustom-card-height h2 strong {
+    color: #03bb78;
+}
+
+
+.banner-card {
+    background-color: #f0f0f0;
+    padding: 30px;
+    position: relative;
+    top: 10rem;
+
+}
+
+.second-container {
+    display: none;
+}
+
+.banner-card p {
+    color: black;
+
+
+}
+
+.tradingProfit .collapseCard .collapseBtn,
+.tradingProfit .collapseCard .accordion-body {
+    width: 100%;
+}
+
+
+
+
+.moneyCard {
+    background-color: white;
+}
+
+.moneyCard .section-header h2 {
+    color: black;
+}
+
+.bar-img {
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.barImage-background {
+    width: 80% !important;
+}
+
+#carouselExampleInterval {
+    margin-top: 65px;
+}
+
+#carouselExampleInterval .coustom-card-height {
+    height: 10rem;
+    border-radius: 10px;
+}
+
+#carouselExampleInterval p {
+    line-height: 2;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.trust-color h2 {
+    color: #000;
+}
+
+#carouselExampleInterval .card:hover {
+    background-color: #00B67A;
+
+
+
+}
+
+#carouselExampleInterval p:hover,
+i:hover {
+    color: white;
+}
+
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+
+.moneyCard .accordion-button {
+    margin-bottom: 0px;
+    color: #bdbdbd;
+    font-family: 'Catamaran', sans-serif;
+    line-height: 1.2;
+    font-weight: 500;
+    background-color: #2a2b32;
+    padding: 1.5rem 1.25rem;
+}
+
+.accordion-button::after {
+    background-image: url(../assets/funding/down-arrow.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../assets/funding/down-arrow-green.svg);
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: #03bb78;
+    background-color: #f0f0f0;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #2fbb78;
+}
+
+.bg-faq {
+    background-color: black !important;
+}
+
+.form-link-sec a:active,
+.form-link-sec a:hover {
+    color: #00B67A;
+}
+
+.form-link-sec li a {
+    color: white;
+}
+
+.faq-item {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 18px;
+    letter-spacing: -1px;
+    padding: 20px 20px;
+}
+
+.help-inner {
+
+    padding: 35px 70px !important;
+    margin-top: 70px;
+
+}
+
+.faq-item:hover {
+    color: #03bb78;
+
+
+}
+
+section.dark ul li {
+    color: #2a2b32;
+}
+
+.faq-link.active {
+    color: #03bb78;
+    background-color: #000;
+}
+
+
+/* FAQ */
+.faq {
+    display: none;
+}
+
+.faqS {
+    display: none;
+}
+
+.program-details {
+    display: none;
+}
+
+
+
+#Direct-funding-faq {
+    display: block;
+}
+
+
+
+.answer {
+    display: none;
+}
+
+.tabel-bg {
+    background-color: #f2f2f2;
+}
+
+.moneyCard .dropdown {
+    display: none;
+}
+
+.faq-heading {
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.footer-top-btn {
+
+    margin-bottom: 70px;
+}
+
+/* /FAQ/ */
+
+.bordered-card {
+    border: 5px solid #e3373f;
+}
+
+.form-sub-heading {
+    line-height: 1.5;
+    font-family: 'Catamaran', sans-serif;
+    color: white;
+}
+
+.image-text {
+    background: linear-gradient(to bottom, #000 0%, #000 80%, #181818 80%);
+}
+
+.tradingSkill {
+    background: inherit !important;
+}
+
+@media screen and (max-width: 992px) {
+    .banner h1 {
+        margin-top: 100px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .coustom-height {
+
+        margin-top: 85px;
+    }
+
+    .faq-item {
+        padding: 20px 10px;
+        font-size: 14px;
+    }
+
+    .customTable thead .tableRow th,
+    .customTable .tableRow td {
+        font-size: 10px !important;
+        padding: 10px;
+        vertical-align: top;
+        font-weight: 600;
+    }
+
+    .bg-color {
+        padding-top: 70px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .second-container {
+        display: block;
+    }
+
+    .first-container {
+        display: none;
+    }
+
+    .challenge {
+        font-size: 20px !important;
+        font-weight: 600 !important;
+    }
+
+    .offer .card {
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 280px) {
+    #carouselExampleInterval .card {
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .banner-btn {
+        display: grid;
+        width: 50%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .moneyCard .dropdown {
+        display: block;
+    }
+
+    .faq-btn-item {
+        display: none;
+    }
+
+
+
+}
+
+
+
+.faq-section {
+
+    display: none;
+}
+
+
+.faq-section {
+    display: block;
+}

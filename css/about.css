@@ -1,0 +1,402 @@
+@import 'core.css?v=2';
+@import"funding.css";
+
+body {
+  background-color: #fff;
+}
+
+.banner {
+  background-image: url("../assets/bg.jpg");
+}
+
+.banner h4 {
+  z-index: 1;
+  color: white;
+}
+
+.link-tabs {
+  padding: 0px;
+  background: linear-gradient(to bottom, #fdf9ee 68%, #fff 20%);
+}
+
+.link-tabs .link-container {
+  border-bottom: 1px solid #e1e1e1;
+  background: #fdf9ee;
+  transition: all 300ms ease-in;
+}
+
+.link-tabs .link-container.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background: #fdf9ee;
+  box-shadow: 0px 0px 10px #e3dbdb;
+}
+
+.link-tabs a {
+  padding: 10px 10px;
+  font-size: 15px;
+  text-decoration: none;
+  position: relative;
+}
+
+.link-tabs a.active {
+  font-weight: bold;
+}
+
+.link-tabs a.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid var(--brandColor1);
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+.link-tabs .ticks {
+  width: 23px;
+}
+
+.link-tabs .play-icon {
+  left: 0;
+  top: calc(50% - 30px);
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0.4;
+  width: 60px;
+}
+
+.ourMission {
+  background-color: white;
+}
+
+.ourMission p {
+  color: #000;
+}
+
+.ourMission .flip-card {
+  width: 100%;
+  min-height: 350px;
+  background-color: var(--brandColor1);
+  padding: 50px;
+}
+
+.ourMission .flip-card.vision {
+  background-color: #f0f0f0;
+}
+
+.help {
+  background-image: linear-gradient(to bottom, transparent 80%, #fff 20%), url("../assets/map.jpg");
+  padding-top: 150px;
+}
+
+.help .first-text {
+  color: var(--brandColor1);
+}
+
+.help p {
+  color: #e2e2e2;
+}
+
+.help .img-wrapper {
+  height: 145px;
+  width: 145px;
+  border: 1px solid rgb(59, 58, 58);
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+  transition: all 300ms ease-in-out;
+}
+
+.help .img-wrapper img {
+  filter: invert(1) grayscale(100%);
+}
+
+.help .img-wrapper:hover {
+  background-color: #fff;
+}
+
+.help .img-wrapper:hover img {
+  filter: inherit;
+}
+
+.help .help-inner {
+  background-image: url("../assets/yellow-img.png");
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  padding: 66px 80px;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.help .help-inner h2 {
+  text-transform: capitalize;
+}
+
+.help .help-inner h2 span {
+  font-size: 15px;
+}
+
+.help .help-inner .btn {
+  color: white;
+  background-color: black;
+  border-radius: 0;
+}
+
+.reviews {
+  background-color: white;
+}
+
+.reviews .owl-item {
+  padding: 52px 0px;
+}
+
+.reviews .review {
+  background: linear-gradient(to left, #f0f0f0, #fff, #f0f0f0);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 50px;
+  opacity: 0.6;
+}
+
+.reviews .review .avatar-wrapper {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.reviews .review p {
+  color: black;
+}
+
+.reviews .review .name {
+  color: var(--brandColor1);
+}
+
+.reviews .review .role {
+  color: #b8b4b4;
+  font-size: 13px;
+}
+
+.reviews .owl-item.active.center {
+  z-index: 3;
+}
+
+.reviews .owl-item.active.center .review {
+  background: white;
+  transform: scale(1.2);
+  padding: 35px 50px;
+  border: 1px solid rgba(213, 213, 213, 0.3411764706);
+  box-shadow: 0px 6px 10px #f0f0f0;
+  opacity: 1;
+}
+
+.reviews .owl-dots {
+  display: block !important;
+}
+
+.reviews .owl-dots .owl-dot {
+  background-color: black !important;
+}
+
+.reviews .owl-dots .owl-dot.active {
+  opacity: 0.5;
+}
+
+.sponsorships {
+  background-color: white;
+}
+
+.sponsorships .sponsor-item {
+  border: 1px solid #dfdfdf;
+  border-radius: 20px;
+  padding: 60px 25px;
+}
+
+.sponsorships .sponsor-item h5 {
+  color: var(--brandColor1);
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.sponsorships .sponsor-item h5 span {
+  color: black;
+  font-size: 28px;
+  display: block;
+  margin-top: 10px;
+}
+
+.sponsorships .sponsor-item img {
+  width: 150px;
+}
+
+.sponsorships .sponsor-item p {
+  min-height: 240px;
+}
+
+.sponsorships a {
+  text-decoration: none;
+}
+
+.contact {
+  background-color: white;
+}
+
+.contact h2 {
+  color: black;
+}
+
+.contact p {
+  font-size: 16px;
+}
+
+.contact ul li {
+  padding: 5px 0px;
+}
+
+.contact ul li a {
+  text-decoration: none;
+}
+
+li.custom-links img {
+  background: #00000000;
+  width: 28px !important;
+  padding: 5px;
+  border-radius: 12px;
+}
+
+li.custom-links span {
+  margin-left: 16px;
+  color: black;
+  font-family: play, snas-serif;
+}
+
+.contact ul li a img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.contact form .form-control {
+  border-radius: 0;
+  padding: 16px 10px;
+}
+
+.contact form .btn {
+  border-radius: 0;
+  background-color: var(--brandColor1);
+  border: none;
+  color: black;
+  font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  .link-tabs {
+    text-align: center;
+  }
+
+  .link-tabs .link-container {
+    padding: 10px 0px;
+  }
+
+  .link-tabs .link-container a {
+    display: inline-block;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+
+  .link-tabs .link-container a.active {
+    background-color: var(--brandColor1);
+  }
+
+  .link-tabs .link-container a.active::after {
+    display: none;
+  }
+
+  .link-tabs .ticks {
+    margin: auto;
+    margin-bottom: 20px;
+    width: auto;
+    text-align: center;
+  }
+
+  .link-tabs .ticks img {
+    display: inline-block;
+  }
+
+  .help {
+    background: linear-gradient(to bottom, transparent 90%, #fff 20%), url("../assets/map.jpg");
+    padding-top: 50px;
+  }
+
+  .help .img-wrapper {
+    width: auto;
+  }
+
+  .help .help-inner {
+    margin-top: 0px !important;
+    padding: 20px !important;
+    display: block;
+  }
+
+  .reviews .review {
+    box-shadow: none !important;
+  }
+
+  .sponsorships .sponsor-item {
+    margin-bottom: 10px;
+  }
+
+  /*ourMission*/
+  .ourMission .flip-card {
+    height: 400px;
+  }
+
+  .ourMission .flip-card .flip-card-inner {
+    transform: rotateX(180deg);
+  }
+
+  .ourMission .flip-card .flip-card-inner .flip-card-front {
+    padding: 20px;
+  }
+
+  /*reviews*/
+  .reviews .owl-item {
+    padding: 0px;
+  }
+
+  .reviews .owl-item.active.center .review {
+    transform: scale(1);
+  }
+
+  .reviews .owl-dots {
+    margin: 0px;
+  }
+
+  /*sponsorships*/
+  .sponsorships .sponsor-item {
+    padding: 25px;
+    margin-bottom: 30px;
+  }
+
+  /*awards*/
+  .awards {
+    padding: 50px 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact {
+    padding: 1 0px 0px;
+  }
+}

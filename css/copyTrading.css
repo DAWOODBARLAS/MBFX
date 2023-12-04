@@ -1,0 +1,241 @@
+@import"funding.css";
+@import"partner.css";
+
+
+/* Banner */
+.banner {
+    background-image: url("../assets/copyTrading/download-min.png");
+    background-color: #000000;
+}
+
+.banner {
+    height: auto;
+}
+
+.c-white {
+    color: #ffffff;
+}
+
+.banner-hedshot img {
+    border-radius: 100px;
+}
+
+.banner h2 {
+    color: white;
+    text-align: end;
+    font-weight: bold;
+}
+
+.banner h1 {
+    line-height: 1;
+    margin-top: 0px;
+    font-size: 30px !important;
+}
+
+.banner p {
+    line-height: 1;
+}
+
+.banner-mobile {
+    max-width: 40%;
+}
+
+
+
+img.vert-move-rev {
+    -webkit-animation: mover 1s infinite alternate-reverse;
+    /* animation: mover 1s infinite reverse; */
+}
+
+/*Img Caurd section] */
+#monthly-gain .card {
+    min-height: 100%;
+    background-color: black;
+}
+
+#monthly-gain h1 {
+    color: white;
+
+}
+
+#monthly-gain h2 {
+    color:
+        rgb(0, 0, 0);
+    font-family: 'Catamaran', sans-serif;
+}
+
+.cardsTable p {
+    color: white !important;
+    font-weight: bolder;
+}
+
+#monthly-gain h4 {
+    font-family: 'Catamaran', sans-serif;
+}
+
+.img-trade img {
+    max-width: 250px;
+}
+
+#trad-card {
+    background: linear-gradient(to bottom, #000 0%, #000 80%, #ffffff 80%);
+}
+
+#trad-card h1 {
+    color: white;
+}
+
+/* Performance */
+#performance {
+    background-color: black;
+}
+
+#performance .performance {
+    background-image: url("../assets/copyTrading/graph-small.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: inherit;
+}
+
+#performance img {
+    max-width: 75%;
+}
+
+.performance p {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* How dose it works */
+
+.work-heading {
+    color: black;
+    line-height: 1.2;
+    word-spacing: 0;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bold;
+}
+
+.step-heading {
+    border: 1px solid;
+    border-radius: 95px;
+    padding: 25px 35px 25px 35px;
+
+}
+
+#work .offer .card {
+    background: transparent !important;
+}
+
+.hire-main-container {
+    max-width: 1300px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 2.9em;
+}
+
+.singing-card {
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+}
+
+.one h2 {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: auto;
+    border-radius: 50px;
+    font-family: 'Roboto';
+    font-size: 3rem;
+    position: relative;
+    font-weight: normal;
+    border: 1px solid #e3373f;
+    color: #e3373f;
+    text-align: center;
+}
+
+.after::after {
+    content: '';
+    display: block;
+    height: 0.5px;
+    width: 100%;
+    background: #e3373f;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 100%;
+
+
+}
+
+.before::before {
+    content: '';
+    display: block;
+    height: 0.5px;
+    width: 100%;
+    background: #e3373f;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 100%;
+
+}
+
+.one-c h2 {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: auto;
+    border-radius: 50px;
+    font-family: 'Roboto';
+    font-size: 3rem;
+    position: relative;
+    font-weight: normal;
+    border: 1px solid #e3373f;
+    text-align: center;
+}
+
+/* verify */
+#verifiy {
+    background-color: black !important;
+}
+
+#verifiy video {
+    max-width: 100%;
+}
+
+/* Footer */
+.footerText .legal li {
+    font-size: 12px;
+    color: #ffffff;
+    margin: 0px 10px;
+}
+
+.footer-desclimber {
+    font-size: 12px;
+}
+
+/* responsive */
+@media screen and (max-width: 1100px) {
+    .hire-main-container {
+        display: block;
+    }
+
+    .singing-card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footerText {
+        display: none;
+    }
+}

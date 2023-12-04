@@ -1,0 +1,10 @@
+[15-Aug-2022 13:01:10 UTC] PHP Notice:  Undefined variable: signupUrl in /home/mbfxwcmw/public_html/includes/footer.php on line 8
+[15-Aug-2022 13:01:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function customUrl() in /home/mbfxwcmw/public_html/includes/footer.php:9
+Stack trace:
+#0 /home/mbfxwcmw/public_html/share_footer.php(3): include()
+#1 {main}
+  thrown in /home/mbfxwcmw/public_html/includes/footer.php on line 9
+[15-Aug-2022 16:24:12 UTC] PHP Notice:  Undefined index: HTTP_REFERER in /home/mbfxwcmw/public_html/includes/footerScript.php on line 51
+[15-Aug-2022 16:24:12 UTC] PHP Notice:  Undefined index: HTTP_REFERER in /home/mbfxwcmw/public_html/includes/footerScript.php on line 51
+[15-Aug-2022 16:24:51 UTC] PHP Notice:  Undefined index: HTTP_REFERER in /home/mbfxwcmw/public_html/includes/footerScript.php on line 51
+[15-Aug-2022 16:25:11 UTC] PHP Notice:  Undefined index: HTTP_REFERER in /home/mbfxwcmw/public_html/includes/footerScript.php on line 51

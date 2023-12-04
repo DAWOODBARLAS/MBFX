@@ -1,0 +1,621 @@
+@import 'core.css';
+
+
+
+body {
+  background-color: #fff;
+}
+
+
+.slider-container,
+.selider2-container {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  background-color: #03bb78;
+  border-radius: 10px;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+  background-color: #f0f0f0;
+  appearance: none;
+  border-radius: 10px;
+}
+
+
+
+/* Add your styles for the slider thumb here */
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background-color: #e3373f;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+input[type="range"]::-webkit-slider-thumb::before {
+  content: attr(data-value);
+  /* Use data-value instead of value to avoid conflicts */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #03bb78;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+#sliderValue,
+#selider2Value {
+  margin: 10px 50px;
+  font-size: 25px;
+  font-weight: 900;
+
+}
+
+/* ?\ */
+
+.image-text {
+  background: black;
+}
+
+.service-heading,
+.form-sub-heading {
+  color: white;
+  font-size: 20px;
+}
+
+
+
+/* How dose it works */
+
+.work-heading {
+  color: black;
+  line-height: 1.2;
+  word-spacing: 0;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: bold;
+}
+
+.step-heading {
+  border: 1px solid;
+  border-radius: 95px;
+  padding: 25px 35px 25px 35px;
+
+}
+
+#work .offer .card {
+  background: transparent !important;
+}
+
+.hire-main-container {
+  max-width: 1300px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 2.9em;
+}
+
+.additional-text {
+  visibility: hidden;
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  left: 24%;
+  border-radius: 10px;
+  font-size: 10px;
+}
+
+
+.singing-card {
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+}
+
+.one h2 {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  margin: auto;
+  border-radius: 50px;
+  font-family: 'Roboto';
+  font-size: 3rem;
+  position: relative;
+  font-weight: normal;
+  border: 1px solid #e3373f;
+  color: #e3373f;
+  text-align: center;
+}
+
+.after::after {
+  content: '';
+  display: block;
+  height: 0.5px;
+  width: 100%;
+  background: #e3373f;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 100%;
+
+
+}
+
+.before::before {
+  content: '';
+  display: block;
+  height: 0.5px;
+  width: 100%;
+  background: #e3373f;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 100%;
+
+}
+
+.one-c h2 {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  margin: auto;
+  border-radius: 50px;
+  font-family: 'Roboto';
+  font-size: 3rem;
+  position: relative;
+  font-weight: normal;
+  border: 1px solid #e3373f;
+  text-align: center;
+}
+
+.banner {
+  background-image: url("../assets/bg.jpg");
+}
+
+.banner .form {
+  background: rgba(212, 212, 212, 0.9019607843);
+  border-radius: 5px;
+  box-shadow: 6px 6px 7px #171717;
+}
+
+.banner .form input,
+.banner .form textarea {
+  height: 50px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.banner .form input::-moz-placeholder,
+.banner .form textarea::-moz-placeholder {
+  font-size: 11px;
+  color: #7a7878;
+}
+
+.banner .form input:-ms-input-placeholder,
+.banner .form textarea:-ms-input-placeholder {
+  font-size: 11px;
+  color: #7a7878;
+}
+
+.banner .form input::placeholder,
+.banner .form textarea::placeholder {
+  font-size: 11px;
+  color: #7a7878;
+}
+
+.banner .form h3 {
+  padding: 20px 0px;
+  font-size: 17px;
+}
+
+.banner .form button {
+  padding: 10px 15px;
+  border-radius: 0;
+  margin: 10px 0px 20px 0px;
+}
+
+.banner .section-header h2 {
+  color: white;
+}
+
+.banner .section-header p {
+  color: var(--brandColor1-light);
+}
+
+.banner .section-header p span {
+  color: var(--brandColor1-light);
+}
+
+.link-tabs {
+  padding: 0px;
+  background: linear-gradient(to bottom, #fdf9ee 68%, #fff 20%);
+}
+
+.link-tabs .link-container {
+  border-bottom: 1px solid #e1e1e1;
+  background: #fdf9ee;
+  transition: all 300ms ease-in;
+}
+
+.link-tabs .link-container.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background: #fdf9ee;
+  box-shadow: 0px 0px 10px #e3dbdb;
+}
+
+.link-tabs a {
+  padding: 10px 10px;
+  font-size: 15px;
+  text-decoration: none;
+  position: relative;
+}
+
+.link-tabs a.active {
+  font-weight: bold;
+}
+
+.link-tabs a.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid var(--brandColor1);
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+.topTraders .card {
+  box-shadow: 3px 3px 4px #dfdcdc;
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+
+.topTraders .card img {
+  width: 26%;
+}
+
+.topTraders .card h3 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.topTraders .card p {
+  color: gray;
+  font-size: 12px;
+}
+
+.topTraders .card a {
+  padding: 8px;
+  width: 100%;
+  font-size: 11px;
+}
+
+.topTraders .card .cardsTable {
+  padding-right: 15px;
+  padding-left: 35px;
+}
+
+.topTraders .card .cardsTable .col-md-4:first-child span {
+  color: green;
+}
+
+.topTraders .card .cardsTable .itemCard {
+  color: gray;
+  font-size: 9px;
+  padding-bottom: 22px;
+}
+
+.topTraders .card .cardsTable .itemCard span {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.topTraders .owl-nav {
+  display: none;
+}
+
+.services .cards {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 150px;
+  transition: all 600ms ease;
+  text-align: center;
+}
+
+.services .cards:hover {
+  box-shadow: 3px 2px 0px 0px #cccaca;
+  background-color: var(--brandColor1);
+}
+
+.services .cards:hover img {
+  filter: invert(0.1) grayscale(1);
+}
+
+.services .cards:hover p {
+  color: #fff;
+}
+
+.services .cards p {
+  margin: 0;
+  font-weight: bold;
+  color: black;
+  font-size: 14px;
+}
+
+.services .cards img {
+  width: 21%;
+  margin-bottom: 12px;
+
+}
+
+.commision {
+  background-image: url("../assets/partner/map-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.commision .section-header p {
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.works .section-header h2 {
+  margin-top: 40px;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.works .section-header p {
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.works .child-container {
+  margin-bottom: 50px;
+}
+
+.works .child-container .card {
+  height: 100%;
+  margin-bottom: 10px;
+  border: 0;
+  box-shadow: 2px 2px 10px #c7c3c3;
+  position: relative;
+}
+
+.works .child-container .card:hover {
+  background-color: rgb(238, 230, 230);
+}
+
+.works .child-container .card::after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  height: 30px;
+  bottom: -10px;
+  left: 10px;
+  right: 10px;
+  box-shadow: 2px 2px 13px #ddd;
+}
+
+.works .child-container .work-card-head {
+  padding: 20px 0px 15px 25px;
+  border-bottom: 1px solid rgb(203, 200, 200);
+}
+
+.works .child-container .work-card-head img {
+  width: 18%;
+}
+
+.works .child-container .work-card-head h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.works .child-container .work-card-head p {
+  font-size: 14px;
+}
+
+.works .child-container .work-card-body {
+  padding: 15px 25px 0px 30px;
+}
+
+.works .child-container .work-card-body .image {
+  width: 4%;
+}
+
+.works .child-container .work-card-body h4 {
+  margin: 0;
+  font-size: 17px;
+  padding-left: 8px;
+  color: #000;
+  font-weight: 700;
+}
+
+.works .child-container .work-card-body p {
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #000;
+  font-size: 15px;
+}
+
+.ctaJoin {
+  background: url("../assets/partner/join-bg.jpg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+}
+
+.ctaJoin p {
+  color: var(--brandColor1);
+  margin: 0;
+}
+
+.ctaJoin h2 {
+  color: white;
+}
+
+.ctaJoin button {
+  padding: 10px 0px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  width: 60%;
+}
+
+@media (min-width: 992px) {
+  .banner form {
+    width: 90% !important;
+    margin-top: 140px !important;
+  }
+
+  .banner .section-header h2 {
+    font-weight: 500;
+    font-size: 45px;
+  }
+
+  .topTraders .section-header h2 {
+    font-size: 33px;
+    margin-bottom: 10px;
+  }
+
+  .topTraders .section-header p {
+    margin-bottom: 40px;
+  }
+
+  .services {
+    margin-bottom: 30px;
+    padding-top: 25px;
+  }
+
+  .services .section-header h2 {
+    font-size: 33px;
+    margin-bottom: 10px;
+  }
+
+  .services .section-header p {
+    margin-bottom: 40px;
+  }
+
+  .signalProvider .section-header h2 {
+    font-size: 30px;
+  }
+
+  .signalProvider .section-header p {
+    font-size: 13px;
+  }
+
+  .socialmedia .image {
+    margin-top: -130px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ctaJoin {
+    height: auto;
+  }
+
+  .ctaJoin button {
+    padding: 10px 30px;
+    margin: 10px 5px 0px 5px;
+    width: auto;
+  }
+
+  .banner {
+    height: auto;
+  }
+
+  .banner form {
+    background: rgba(255, 255, 255, 0.7019607843);
+  }
+
+  .banner form input {
+    height: 40px !important;
+  }
+
+  .banner form input::-moz-placeholder {
+    font-size: 12px !important;
+  }
+
+  .banner form input:-ms-input-placeholder {
+    font-size: 12px !important;
+  }
+
+  .banner form input::placeholder {
+    font-size: 12px !important;
+  }
+
+  .link-tabs {
+    text-align: center;
+  }
+
+  .link-tabs .link-container {
+    padding: 10px 0px;
+  }
+
+  .link-tabs .link-container a {
+    display: inline-block;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+
+  .link-tabs .link-container a.active {
+    background-color: var(--brandColor1);
+  }
+
+  .link-tabs .link-container a.active::after {
+    display: none;
+  }
+
+  .signalProvider .child-container .card {
+    height: auto;
+    margin-right: 0px;
+  }
+
+  .topTraders {
+    background: #f9f9f9;
+  }
+
+  .services .cards {
+    min-height: 158px;
+  }
+
+  .services .cards img {
+    width: 40%;
+  }
+}
+
+
+
+
+
+
+/* Responsive breakpoints */
+@media screen and (max-width: 880px) {
+  .hire-main-container {
+    display: block;
+  }
+
+  .singing-card {
+    width: 100%;
+  }
+}

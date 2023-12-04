@@ -1,0 +1,120 @@
+@import 'core.css';
+body {
+  background-color: #fff;
+}
+
+.banner {
+  background-image: url("../assets/trading-instruments/banner-img.jpg");
+}
+
+
+.tradingCondition .nav-pills .nav-link.active,
+.tradingCondition .nav-pills .show > .nav-link {
+  background-color: var(--brandColor1);
+}
+.tradingCondition .tabcard {
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 0px #dfdcdc;
+  border-radius: 10px;
+  width: 150px;
+  height: 55px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin: 0px 10px;
+}
+.tradingCondition .tabcard p {
+  margin: 0;
+  padding-left: 10px;
+  color: black;
+  font-weight: 600;
+}
+.tradingCondition .tabcard.active p{
+color:#fff;   
+}
+.tradingCondition .tabcard img {
+  width: 25%;
+}
+.tradingCondition .sub-heading {
+  padding: 40px 0px 30px 0px;
+  font-weight: bold;
+}
+.tradingCondition .tradingTable {
+  border-radius: 10px;
+  margin: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tradingCondition .tradingTable table {
+  box-shadow: 2px 2px 18px #dfdcdc;
+  border-radius: 20px;
+}
+.tradingCondition .tradingTable thead tr {
+  background-color: #f4f4f4;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.tradingCondition .tradingTable thead th {
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.tradingCondition .tradingTable tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+.tradingCondition .tradingTable tbody td {
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+.tradingCondition .tradingTable tbody td button {
+  background-color: var(--brandColor1);
+  border-radius: 40px;
+  border: 0;
+  padding: 7px 17px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+.tradingCondition .tradingTable tfoot td {
+  background-color: #f4f4f4;
+}
+.tradingCondition .tradingTable tfoot td p {
+  padding-top: 10px;
+  font-size: 11px;
+}
+
+.commision .section-header p {
+  color: #000;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .link-tabs {
+    text-align: center;
+  }
+  .link-tabs .link-container {
+    padding: 10px 0px;
+  }
+  .link-tabs .link-container a {
+    display: inline-block;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  .link-tabs .link-container a.active {
+    background-color: var(--brandColor1);
+  }
+  .link-tabs .link-container a.active::after {
+    display: none;
+  }
+  .tradingTable {
+    overflow: auto;
+  }
+}
+@media (min-width: 992px) {
+  .banner .section-header {
+    width: 50%;
+  }
+}

@@ -1,0 +1,220 @@
+@import 'core.css';
+
+body {
+  background-color: white;
+}
+
+.banner {
+  background-image: url("../assets/prising-spreads/banner-img.jpg");
+}
+
+.tradingProfit .collapseCard .collapseBtn {
+  padding: 0;
+  width: 100%;
+  height: 55px;
+  box-shadow: 3px 3px 0px #dfdcdc;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 10px !important;
+}
+
+.tradingProfit .collapseCard .collapseBtn .collapseCard {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.tradingProfit .collapseCard .collapseBtn .collapseCard img {
+  padding: 0px 10px;
+  width: 56%;
+}
+
+.tradingProfit .collapseCard .collapseBtn .collapseCard p {
+  margin: 0;
+  color: black;
+}
+
+.tradingProfit .collapseCard .accordion-item {
+  border: 0;
+  margin-bottom: 20px;
+}
+
+.tradingProfit .collapseCard .accordion-button:not(.collapsed) {
+  background-color: var(--brandColor1);
+}
+
+.tradingProfit .collapseCard .accordion-body {
+  box-shadow: 3px 3px 0px #dfdcdc;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  width: 100%;
+}
+
+.tradingProfit .collapseCard .accordion-button::after {
+  content: "+";
+  font-size: 20px;
+  background-image: none;
+  font-weight: 100;
+  color: black;
+  transform: translateY(-4px);
+  padding-right: 40px;
+  padding-top: 3px;
+}
+
+.tradingProfit .collapseCard .accordion-button:not(.collapsed)::after {
+  background-image: none;
+  content: "-";
+  font-size: 20px;
+  transform: translate(-5px, -4px);
+  transform: rotate(0deg);
+  padding-right: 40px;
+}
+
+.tradingProfit .tabcard {
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 0px #dfdcdc;
+  border-radius: 10px;
+  width: 150px;
+  height: 55px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin: 0px 10px;
+}
+
+.tradingProfit .tabcard p {
+  margin: 0;
+  padding-left: 10px;
+  color: black;
+  font-weight: 600;
+}
+
+.tradingProfit .tabcard img {
+  width: 25%;
+}
+
+.tradingProfit .sub-section h2 {
+  padding: 40px 0px 7px 0px;
+  font-weight: bold;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.tradingProfit .sub-section p {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.tradingProfit .tradingTable {
+  border-radius: 10px;
+  margin: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tradingProfit .tradingTable table {
+  box-shadow: 2px 2px 18px #dfdcdc;
+  border-radius: 20px;
+}
+
+.tradingProfit .tradingTable thead tr {
+  background-color: #efefef;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.tradingProfit .tradingTable thead tr th {
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-size: 12px;
+}
+
+.tradingProfit .tradingTable tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.tradingProfit .tradingTable tbody td {
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.tradingProfit .tradingTable tbody td button {
+  background-color: var(--brandColor1);
+  border-radius: 40px;
+  border: 0;
+  padding: 7px 17px;
+  font-size: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+.tradingProfit .tradingTable tfoot td {
+  background-color: #efefef;
+}
+
+.tradingProfit .tradingTable tfoot td p {
+  padding-top: 10px;
+  font-size: 11px;
+}
+
+.tradingProfit .loadMmoreBtn button {
+  padding: 8px 40px;
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: 15px;
+  border-radius: 0px;
+  border: 0px;
+}
+
+.ourMission {
+  background-color: white;
+}
+
+.ourMission p {
+  color: #000;
+}
+
+.ourMission .flip-card {
+  width: 100%;
+  min-height: 280px;
+  background-color: var(--brandColor1);
+  padding: 50px;
+}
+
+.ourMission .flip-card.vision {
+  background-color: #f0f0f0;
+}
+
+.ourMission .flip-card p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.ourMission .secondCard {
+
+  justify-content: center;
+  align-items: center;
+}
+
+.ourMission .flip-card:not(.secondCard) * {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+
+  .tradingProfit .collapseCard .collapseBtn,
+  .tradingProfit .collapseCard .accordion-body {
+    width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .tradingProfit .collapseCard .collapseBtn,
+  .tradingProfit .collapseCard .accordion-body {
+    width: 70%;
+  }
+}

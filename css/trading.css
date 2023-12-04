@@ -1,0 +1,241 @@
+@import 'core.css';
+
+body {
+  background-color: #fff;
+}
+
+.banner {
+  background-image: url("../assets/trading-instruments/banner-img.jpg");
+}
+
+.link-tabs {
+  padding: 0px;
+}
+
+.link-tabs .link-container {
+  border-bottom: 1px solid #e1e1e1;
+  transition: all 300ms ease-in;
+  height: 40px;
+}
+
+.link-tabs .link-container.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background: #fdf9ee;
+  box-shadow: 0px 0px 10px #e3dbdb;
+}
+
+.link-tabs a {
+  padding: 10px 10px;
+  font-size: 15px;
+  text-decoration: none;
+  position: relative;
+}
+
+.link-tabs a.active {
+  font-weight: bold;
+}
+
+.link-tabs a.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid var(--brandColor1);
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+.tradingSkill {
+  background-image: linear-gradient(to bottom, transparent 80%, #fff 20%), url("../assets/trading/demo-account-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.tradingSkill .sub-section {
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+.tradingSkill .sub-section h2 {
+  font-size: 29px;
+  color: var(--brandColor1);
+}
+
+.tradingSkill .sub-section p {
+  color: white;
+}
+
+.tradingSkill .img-wrapper {
+  height: 75px;
+  width: 80px;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.1);
+  transition: all 300ms ease-in-out;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.tradingSkill .img-wrapper img {
+  filter: invert(1) grayscale(100%);
+  padding: 10px 10px 5px 10px;
+}
+
+.tradingSkill .img-wrapper p {
+  font-size: 14px;
+}
+
+.tradingSkill .img-wrapper a {
+  text-decoration: none;
+}
+
+.tradingSkill .img-wrapper:hover {
+  background-color: #fff;
+}
+
+.tradingSkill .img-wrapper:hover img {
+  filter: inherit;
+}
+
+.tradingSkill .img-wrapper:hover p {
+  color: black;
+}
+
+.tradingSkill .help-inner {
+  background-image: url("../assets/yellow-img.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 70px;
+  align-items: center;
+}
+
+.tradingSkill .help-inner h2 {
+  text-transform: capitalize;
+}
+
+.tradingSkill .help-inner h2 span {
+  font-size: 15px;
+}
+
+.tradingSkill .help-inner .btn {
+  color: white;
+  background-color: black;
+  border-radius: 0;
+}
+
+.whychoose .section-header h2 {
+  margin-top: 40px;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.whychoose .section-header p {
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 80px;
+}
+
+.whychoose .child-container {
+  margin-bottom: 50px;
+}
+
+.whychoose .child-container .card {
+  min-height: 209px;
+  margin-bottom: 10px;
+  border: 0;
+  box-shadow: 2px 2px 10px #c7c3c3;
+  position: relative;
+}
+
+.whychoose .child-container .card:hover {
+  background-color: rgb(238, 230, 230);
+}
+
+.whychoose .child-container .card::after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  height: 30px;
+  bottom: -10px;
+  left: 10px;
+  right: 10px;
+  box-shadow: 2px 2px 13px #ddd;
+}
+
+.whychoose .child-container .work-card-head {
+  padding: 5px 0px 7px 25px;
+  border-bottom: 1px solid rgb(203, 200, 200);
+}
+
+.whychoose .child-container .work-card-head img {
+  width: 12%;
+}
+
+.whychoose .child-container .work-card-head h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.whychoose .child-container .work-card-head p {
+  font-size: 14px;
+}
+
+.whychoose .child-container .work-card-body {
+  padding: 20px 35px 10px 35px;
+}
+
+.whychoose .child-container .work-card-body p {
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .link-tabs {
+    text-align: center;
+  }
+
+  .link-tabs .link-container {
+    padding: 10px 0px;
+  }
+
+  .link-tabs .link-container a {
+    display: inline-block;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+
+  .link-tabs .link-container a.active {
+    background-color: var(--brandColor1);
+  }
+
+  .link-tabs .link-container a.active::after {
+    display: none;
+  }
+
+  .tradingSkill {
+    padding-top: 50px;
+  }
+
+  .tradingSkill .help-inner {
+    margin-top: 0px !important;
+    padding: 20px !important;
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .carItemCol {
+    width: 29%;
+  }
+}

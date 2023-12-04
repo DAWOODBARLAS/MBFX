@@ -1,0 +1,34 @@
+@import"funding.css";
+@import"partner.css";
+@import"copyTrading.css";
+
+/*  */
+
+
+.navbar-nav {
+    display: block;
+}
+
+.fixed {
+    position: absolute;
+}
+
+.banner {
+    background-image: url("../assets/account-information/Untitled-2.png");
+    background-color: black;
+}
+
+.banner h1 {
+    font-size: 60px !important;
+    margin-top: 285px;
+    font-weight: 900;
+}
+
+.profit-cards h5 {
+    color: white;
+    font-weight: bolder;
+}
+
+.mobile-img {
+    max-width: 60%;
+}
